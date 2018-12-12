@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "1" 
+const prefix = "5" 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -226,7 +226,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`Starting The Song : **${song.title}**`);
 }
  
-const adminprefix = "-";
+const adminprefix = "-5";
 const devs = ['350056492117917698'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -316,7 +316,7 @@ client.on('message', message => {
  
 client.on('message', msg => {
 
-    if (msg.content == '1join') {
+    if (msg.content == '5join') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
